@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F415A90E2CC599F1000DEAE2 /* Exceptions for "NewsToDay" folder in "NewsToDay" target */ = {
+		F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +21,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F415A8FE2CC599F0000DEAE2 /* NewsToDay */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F415A90E2CC599F1000DEAE2 /* Exceptions for "NewsToDay" folder in "NewsToDay" target */,
-			);
-			path = NewsToDay;
-			sourceTree = "<group>";
-		};
+		F415A8FE2CC599F0000DEAE2 /* NewsToDay */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NewsToDay; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +92,7 @@
 				};
 			};
 			buildConfigurationList = F415A8F72CC599F0000DEAE2 /* Build configuration list for PBXProject "NewsToDay" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -108,7 +102,6 @@
 			);
 			mainGroup = F415A8F32CC599F0000DEAE2;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = F415A8FD2CC599F0000DEAE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
