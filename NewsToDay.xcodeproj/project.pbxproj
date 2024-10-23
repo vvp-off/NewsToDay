@@ -3,26 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 63;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		F415AAFD2CC93E88000DEAE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F415AAF52CC93E88000DEAE2 /* Localizable.strings */; };
+		F415AAFE2CC93E88000DEAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F415AAF82CC93E88000DEAE2 /* Assets.xcassets */; };
+		F415AB002CC93E88000DEAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAF72CC93E88000DEAE2 /* AppDelegate.swift */; };
+		F415AB012CC93E88000DEAE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAFA2CC93E88000DEAE2 /* SceneDelegate.swift */; };
+		F415AB022CC93E88000DEAE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAFB2CC93E88000DEAE2 /* ViewController.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F415A8FC2CC599F0000DEAE2 /* NewsToDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsToDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F415AAF32CC93E88000DEAE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F415AAF42CC93E88000DEAE2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F415AAF72CC93E88000DEAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F415AAF82CC93E88000DEAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F415AAF92CC93E88000DEAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F415AAFA2CC93E88000DEAE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F415AAFB2CC93E88000DEAE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F415A8FB2CC599F0000DEAE2 /* NewsToDay */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F415A8FE2CC599F0000DEAE2 /* NewsToDay */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NewsToDay; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F415A8F92CC599F0000DEAE2 /* Frameworks */ = {
@@ -38,7 +39,7 @@
 		F415A8F32CC599F0000DEAE2 = {
 			isa = PBXGroup;
 			children = (
-				F415A8FE2CC599F0000DEAE2 /* NewsToDay */,
+				F415AAFC2CC93E88000DEAE2 /* NewsToDay */,
 				F415A8FD2CC599F0000DEAE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +50,27 @@
 				F415A8FC2CC599F0000DEAE2 /* NewsToDay.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F415AAF62CC93E88000DEAE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F415AAF52CC93E88000DEAE2 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F415AAFC2CC93E88000DEAE2 /* NewsToDay */ = {
+			isa = PBXGroup;
+			children = (
+				F415AAF62CC93E88000DEAE2 /* Resources */,
+				F415AAF72CC93E88000DEAE2 /* AppDelegate.swift */,
+				F415AAF82CC93E88000DEAE2 /* Assets.xcassets */,
+				F415AAF92CC93E88000DEAE2 /* Info.plist */,
+				F415AAFA2CC93E88000DEAE2 /* SceneDelegate.swift */,
+				F415AAFB2CC93E88000DEAE2 /* ViewController.swift */,
+			);
+			path = NewsToDay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +87,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F415A8FE2CC599F0000DEAE2 /* NewsToDay */,
 			);
 			name = NewsToDay;
 			packageProductDependencies = (
@@ -116,6 +135,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F415AAFD2CC93E88000DEAE2 /* Localizable.strings in Resources */,
+				F415AAFE2CC93E88000DEAE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,10 +147,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F415AB002CC93E88000DEAE2 /* AppDelegate.swift in Sources */,
+				F415AB012CC93E88000DEAE2 /* SceneDelegate.swift in Sources */,
+				F415AB022CC93E88000DEAE2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F415AAF52CC93E88000DEAE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F415AAF32CC93E88000DEAE2 /* en */,
+				F415AAF42CC93E88000DEAE2 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F415A9102CC599F1000DEAE2 /* Debug */ = {
