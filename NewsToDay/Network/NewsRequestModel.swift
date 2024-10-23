@@ -28,4 +28,4 @@ struct Source: Codable {
     let name: String?
 }
 
-//typealias Article = NewsRequestModel.init(articles: T##[Article])
+//typealias Articles = [Article]

@@ -18,16 +18,25 @@ class ViewController: UIViewController {
         refreshData()
     }
 
+    var articles: [News] = []
+    
     func refreshData() {
         Task {
             do {
                 let articles = try await networkManager.fetchNews()
-                print(articles)
+                
+                self.articles = articles.map {News(from: $0) }
+//                просто тест
+                for sourse in articles {
+                    print(sourse.author)
+                }
             }
             catch {
                 print("error fetchNews \(error)")
             }
+
         }
+        
     }
 
 }
