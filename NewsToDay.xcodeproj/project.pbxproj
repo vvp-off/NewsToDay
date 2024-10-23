@@ -3,26 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 63;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		F415AADA2CC93489000DEAE2 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACB2CC93489000DEAE2 /* AppsViewController.swift */; };
+		F415AADB2CC93489000DEAE2 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACC2CC93489000DEAE2 /* BookmarkViewController.swift */; };
+		F415AADC2CC93489000DEAE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACD2CC93489000DEAE2 /* HomeViewController.swift */; };
+		F415AADD2CC93489000DEAE2 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACE2CC93489000DEAE2 /* UserViewController.swift */; };
+		F415AADE2CC93489000DEAE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAD42CC93489000DEAE2 /* AppDelegate.swift */; };
+		F415AADF2CC93489000DEAE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAD72CC93489000DEAE2 /* SceneDelegate.swift */; };
+		F415AAE02CC93489000DEAE2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AAD82CC93489000DEAE2 /* TabBarController.swift */; };
+		F415AAE12CC93489000DEAE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F415AAD22CC93489000DEAE2 /* Localizable.strings */; };
+		F415AAE22CC93489000DEAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F415AAD52CC93489000DEAE2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F415A8FC2CC599F0000DEAE2 /* NewsToDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsToDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F415AACB2CC93489000DEAE2 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		F415AACC2CC93489000DEAE2 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		F415AACD2CC93489000DEAE2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F415AACE2CC93489000DEAE2 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		F415AAD02CC93489000DEAE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F415AAD12CC93489000DEAE2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F415AAD42CC93489000DEAE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F415AAD52CC93489000DEAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F415AAD62CC93489000DEAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F415AAD72CC93489000DEAE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F415AAD82CC93489000DEAE2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F415A8FB2CC599F0000DEAE2 /* NewsToDay */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F415A8FE2CC599F0000DEAE2 /* NewsToDay */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F415A90E2CC599F1000DEAE2 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NewsToDay; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F415A8F92CC599F0000DEAE2 /* Frameworks */ = {
@@ -38,7 +47,7 @@
 		F415A8F32CC599F0000DEAE2 = {
 			isa = PBXGroup;
 			children = (
-				F415A8FE2CC599F0000DEAE2 /* NewsToDay */,
+				F415AAD92CC93489000DEAE2 /* NewsToDay */,
 				F415A8FD2CC599F0000DEAE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +58,39 @@
 				F415A8FC2CC599F0000DEAE2 /* NewsToDay.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F415AACF2CC93489000DEAE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F415AACB2CC93489000DEAE2 /* AppsViewController.swift */,
+				F415AACC2CC93489000DEAE2 /* BookmarkViewController.swift */,
+				F415AACD2CC93489000DEAE2 /* HomeViewController.swift */,
+				F415AACE2CC93489000DEAE2 /* UserViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F415AAD32CC93489000DEAE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F415AAD22CC93489000DEAE2 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F415AAD92CC93489000DEAE2 /* NewsToDay */ = {
+			isa = PBXGroup;
+			children = (
+				F415AACF2CC93489000DEAE2 /* Controllers */,
+				F415AAD32CC93489000DEAE2 /* Resources */,
+				F415AAD42CC93489000DEAE2 /* AppDelegate.swift */,
+				F415AAD52CC93489000DEAE2 /* Assets.xcassets */,
+				F415AAD62CC93489000DEAE2 /* Info.plist */,
+				F415AAD72CC93489000DEAE2 /* SceneDelegate.swift */,
+				F415AAD82CC93489000DEAE2 /* TabBarController.swift */,
+			);
+			path = NewsToDay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F415A8FE2CC599F0000DEAE2 /* NewsToDay */,
 			);
 			name = NewsToDay;
 			packageProductDependencies = (
@@ -116,6 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F415AAE12CC93489000DEAE2 /* Localizable.strings in Resources */,
+				F415AAE22CC93489000DEAE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,10 +167,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F415AADA2CC93489000DEAE2 /* AppsViewController.swift in Sources */,
+				F415AADB2CC93489000DEAE2 /* BookmarkViewController.swift in Sources */,
+				F415AADC2CC93489000DEAE2 /* HomeViewController.swift in Sources */,
+				F415AADD2CC93489000DEAE2 /* UserViewController.swift in Sources */,
+				F415AADE2CC93489000DEAE2 /* AppDelegate.swift in Sources */,
+				F415AADF2CC93489000DEAE2 /* SceneDelegate.swift in Sources */,
+				F415AAE02CC93489000DEAE2 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F415AAD22CC93489000DEAE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F415AAD02CC93489000DEAE2 /* en */,
+				F415AAD12CC93489000DEAE2 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F415A9102CC599F1000DEAE2 /* Debug */ = {
