@@ -10,14 +10,24 @@ import UIKit
 class ViewController: UIViewController {
     
     let networkManager = NetworkManager(with: .default)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         refreshData()
+        
+//        кеширование изображения
+        Task {
+            do {
+                let image = try await ImageService.downloadImage(by: articles[0].urlToImage!)
+            }
+            catch {
+                print("ошибка сохранения в cache \(error.localizedDescription)")
+            }
+        }
     }
-
+    
     var articles: [News] = []
     
     func refreshData() {
@@ -26,7 +36,7 @@ class ViewController: UIViewController {
                 let articles = try await networkManager.fetchNews()
                 
                 self.articles = articles.map {News(from: $0) }
-//                просто тест
+                //                просто тест
                 for sourse in articles {
                     print(sourse.author)
                 }
@@ -34,9 +44,6 @@ class ViewController: UIViewController {
             catch {
                 print("error fetchNews \(error)")
             }
-
         }
-        
     }
-
 }

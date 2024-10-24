@@ -36,6 +36,7 @@ final class NetworkManager {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         
+        
         let responseData = try await sessions.data(for: urlRequest)
         let dataNews = responseData.0
         
@@ -49,4 +50,20 @@ final class NetworkManager {
         }
     }
 }
-
+/*
+enum HTTP {
+    enum Method: String {
+        case get = "GET"
+        case post = "POST"
+    }
+    enum Headers {
+        enum Key: String {
+            case contentType = "Content-Type"
+            case apikey = "X-CMC_PRO_API_KEY"
+        }
+        enum Value: String {
+            case applicationison = "application/json"
+        }
+    }
+}
+*/
