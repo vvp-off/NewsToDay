@@ -9,40 +9,48 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let networkManager = NetworkManager(with: .default)
+    
+    var articles: [News] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        refreshData()
+        fetchNews()
         
-//        кеширование изображения
-        Task {
-            do {
-                let image = try await ImageService.downloadImage(by: articles[0].urlToImage!)
-            }
-            catch {
-                print("ошибка сохранения в cache \(error.localizedDescription)")
-            }
-        }
+        //        кеширование изображения
+        //        Task {
+        //            do {
+        //                let image = try await ImageService.downloadImage(by: articles[0].urlToImage)
+        //            }
+        //            catch {
+        //                print("ошибка сохранения в cache \(error.localizedDescription)")
+        //            }
+        //        }
     }
     
-    var articles: [News] = []
     
-    func refreshData() {
+    
+    func fetchNews() {
+        
+        let httpClient = HTTPClient(with: .default)
+        
         Task {
             do {
-                let articles = try await networkManager.fetchNews()
-                
+                let articles = try await httpClient.requestData()
                 self.articles = articles.map {News(from: $0) }
+                
+                // Здесь обновляем UI с нашими данными.
+//                DispatchQueue.main.async {
+//                }
+                
                 //                просто тест
                 for sourse in articles {
-                    print(sourse.author)
+                    print(sourse.content)
                 }
             }
-            catch {
-                print("error fetchNews \(error)")
+            catch let error as RequestError {
+                print("Произошла ошибка: \(error.errorDescription ?? "Неизвестная ошибка")")
             }
         }
     }

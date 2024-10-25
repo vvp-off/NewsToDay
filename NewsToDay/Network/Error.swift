@@ -7,11 +7,12 @@
 
 import Foundation
 
-enum HTTPError: Error, LocalizedError {
+enum HTTPStatusError: Error, LocalizedError {
     case message
 }
 
-enum HTTPClientError: Error, LocalizedError {
+enum RequestError: Error, LocalizedError {
+    case badURL
     case apiKeyDisabled
     case apiKeyExhausted
     case apiKeyInvalid
@@ -25,6 +26,8 @@ enum HTTPClientError: Error, LocalizedError {
     
     var errorDescription: String? {
         switch self {
+        case .badURL:
+            return "Ошибка в URL адресе"
         case .apiKeyDisabled:
             return "Ваш ключ API отключен"
         case .apiKeyExhausted:

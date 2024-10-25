@@ -1,5 +1,5 @@
 //
-//  NewsRequestModel.swift
+//  NewsResponseModel.swift
 //  NewsToDay
 //
 //  Created by Alexander Bokhulenkov on 21.10.2024.
@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - News
-struct NewsRequestModel: Codable {
+struct NewsResponseModel: Codable {
     let articles: [Article]
 }
 
@@ -27,5 +27,3 @@ struct Source: Codable {
     let id: String?
     let name: String?
 }
-
-//typealias Articles = [Article]
