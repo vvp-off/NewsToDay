@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41349892CCD3C3D0009E0A7 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41349852CCD3C3D0009E0A7 /* AppColors.swift */; };
+		F413498A2CCD3C3D0009E0A7 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41349862CCD3C3D0009E0A7 /* UIColor+Extension.swift */; };
+		F413498B2CCD3C3D0009E0A7 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41349872CCD3C3D0009E0A7 /* UIFont+Extension.swift */; };
+		F41349912CCD3C7B0009E0A7 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F413498D2CCD3C7B0009E0A7 /* Inter-Medium.otf */; };
+		F41349922CCD3C7B0009E0A7 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F413498F2CCD3C7B0009E0A7 /* Inter-SemiBold.otf */; };
+		F41349932CCD3C7B0009E0A7 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F413498E2CCD3C7B0009E0A7 /* Inter-Regular.otf */; };
+		F41349942CCD3C7B0009E0A7 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F413498C2CCD3C7B0009E0A7 /* Inter-Bold.otf */; };
 		F415AADA2CC93489000DEAE2 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACB2CC93489000DEAE2 /* AppsViewController.swift */; };
 		F415AADB2CC93489000DEAE2 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACC2CC93489000DEAE2 /* BookmarkViewController.swift */; };
 		F415AADC2CC93489000DEAE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415AACD2CC93489000DEAE2 /* HomeViewController.swift */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F41349852CCD3C3D0009E0A7 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		F41349862CCD3C3D0009E0A7 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F41349872CCD3C3D0009E0A7 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		F413498C2CCD3C7B0009E0A7 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		F413498D2CCD3C7B0009E0A7 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		F413498E2CCD3C7B0009E0A7 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		F413498F2CCD3C7B0009E0A7 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		F415A8FC2CC599F0000DEAE2 /* NewsToDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsToDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F415AACB2CC93489000DEAE2 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
 		F415AACC2CC93489000DEAE2 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +58,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41349882CCD3C3D0009E0A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F41349852CCD3C3D0009E0A7 /* AppColors.swift */,
+				F41349862CCD3C3D0009E0A7 /* UIColor+Extension.swift */,
+				F41349872CCD3C3D0009E0A7 /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F41349902CCD3C7B0009E0A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F413498C2CCD3C7B0009E0A7 /* Inter-Bold.otf */,
+				F413498D2CCD3C7B0009E0A7 /* Inter-Medium.otf */,
+				F413498E2CCD3C7B0009E0A7 /* Inter-Regular.otf */,
+				F413498F2CCD3C7B0009E0A7 /* Inter-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F415A8F32CC599F0000DEAE2 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F415AAD22CC93489000DEAE2 /* Localizable.strings */,
+				F41349902CCD3C7B0009E0A7 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -89,6 +125,7 @@
 				F415AAD62CC93489000DEAE2 /* Info.plist */,
 				F415AAD72CC93489000DEAE2 /* SceneDelegate.swift */,
 				F415AAD82CC93489000DEAE2 /* TabBarController.swift */,
+				F41349882CCD3C3D0009E0A7 /* Extensions */,
 			);
 			path = NewsToDay;
 			sourceTree = "<group>";
@@ -157,6 +194,10 @@
 			files = (
 				F415AAE12CC93489000DEAE2 /* Localizable.strings in Resources */,
 				F415AAE22CC93489000DEAE2 /* Assets.xcassets in Resources */,
+				F41349912CCD3C7B0009E0A7 /* Inter-Medium.otf in Resources */,
+				F41349922CCD3C7B0009E0A7 /* Inter-SemiBold.otf in Resources */,
+				F41349932CCD3C7B0009E0A7 /* Inter-Regular.otf in Resources */,
+				F41349942CCD3C7B0009E0A7 /* Inter-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +210,9 @@
 			files = (
 				F415AADA2CC93489000DEAE2 /* AppsViewController.swift in Sources */,
 				F415AADB2CC93489000DEAE2 /* BookmarkViewController.swift in Sources */,
+				F41349892CCD3C3D0009E0A7 /* AppColors.swift in Sources */,
+				F413498A2CCD3C3D0009E0A7 /* UIColor+Extension.swift in Sources */,
+				F413498B2CCD3C3D0009E0A7 /* UIFont+Extension.swift in Sources */,
 				F415AADC2CC93489000DEAE2 /* HomeViewController.swift in Sources */,
 				F415AADD2CC93489000DEAE2 /* UserViewController.swift in Sources */,
 				F415AADE2CC93489000DEAE2 /* AppDelegate.swift in Sources */,
